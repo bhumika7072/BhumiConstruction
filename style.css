@@ -48,6 +48,9 @@ body {
 .hero img {
     width: 100%;
     height: auto;
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
+    position: relative; /* Positioning to cover the entire viewport */
+    top:10px;
 }
 .hero .overlay {
     position: absolute;
@@ -60,6 +63,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Poopins', sans-serif;
 }
 .hero .overlay h1 {
     font-size: 48px;
